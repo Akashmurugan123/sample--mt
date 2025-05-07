@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+  
+      .lms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+      }
+  
+      .lms-detail {
+        background-color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        padding: 30px 40px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+      }
+  
+      .lms-detail h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        font-variant: small-caps;
+        color: #0a0a0a;
+        margin-bottom: 25px;
+      }
+  
+      .lms-detail button {
+        border-radius: 40px;
+        padding: 12px 24px;
+        background-color: #003366;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .lms-detail button:hover {
+        background-color: #002244;
+      }
+  
+      .lms-detail button a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
+  
+      /* Responsive Adjustments */
+      @media (max-width: 786px) {
+        .lms-detail {
+          padding: 25px 30px;
+        }
+  
+        .lms-detail h2 {
+          font-size: 1.8rem;
+        }
+      }
+  
+      @media (max-width: 400px) {
+        .lms-detail {
+          padding: 20px;
+          border-radius: 30px;
+        }
+  
+        .lms-detail h2 {
+          font-size: 1.5rem;
+        }
+  
+        .lms-detail button a {
+          font-size: 1rem;
+        }
+      }
+  
+      @media (max-width: 350px) {
+        .lms-detail h2 {
+          font-size: 1.3rem;
+        }
+  
+        .lms-detail button {
+          padding: 10px 18px;
+        }
+      }
+      </style>
+</head>
+<body>
+   <div class="img" style="background-image: url('fnl.jpg');background-repeat: no-repeat;background-size: cover;"> <header >
+
+        <div class="logo"><img src="logo for dark.png" alt="logo" style="height: 200px;width: auto; "></div>
+        <nav>
+            <ul><li><a href="#home"> Home </a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#pricing">Price & Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+              <div class="menu" onclick="toggleMenu()">
+            <div class="menuline"></div>
+            <div class="menuline"></div>
+            <div class="menuline"></div>
+        </div>
+        </nav>
+    </header> <div class="containerhome"> <section id="home"><br><br><br>
+
+        <img src="home logo.png" alt="logo" style="height: 300px;width:auto;margin-top: 100px;">
+        <h2 style="font-variant: small-caps;"> <i>Tech Your Way, Rule the Day!</i></h2>
+        <p>Enhance your skills and stay ahead in the tech world with our expertly designed courses. Learn the latest technologies, explore innovations, and build a strong foundation for success.
+             Merge withus on this journey of knowledge and growth!
+        </p><br><br>
+    </section></div>
+</div>
+
+    <div class="containercourse">
+        <section id="courses">
+        <h2 style="font-variant: small-caps;"> 🎓<i>Available Course </i> </h2>
+        <div class="course-list">  
+            <div class="course" onclick="showDetails('course1')">
+                <img src="images\dca.png" alt="Course 1">
+                <br><br><!--Web development-->
+                <button onclick="window.open('//forms.gle/wr52LL3maqHFxpJb7', '_blank')" 
+                style="background-image: linear-gradient(150deg, #2b1664d7,#9c0b78d2); 
+                padding: 15px 30px; border-radius: 20px; font-weight: bold; font-style: italic;
+                font-size: large; color: wheat; border: none; cursor: pointer;">
+                Register
+             </button>
+                         </div>
+
+
+            <div class="course" onclick="showDetails('course1')">
+                <img src="images\web dev.png" alt="Course 1">
+                <br><br><!--Web development-->
+                <button onclick="window.open('//forms.gle/M7SyEBkhGJKwSFM46', '_blank')" 
+                style="background-image: linear-gradient(150deg, #2b1664d7,#9c0b78d2); 
+                padding: 15px 30px; border-radius: 20px; font-weight: bold; font-style: italic;
+                font-size: large; color: wheat; border: none; cursor: pointer;">
+                Register
+             </button>
+                         </div>
+            <div class="course" onclick="showDetails('course2')">
+                <img src="images\dt sci.png" alt="Course 2">
+                <br><br><!--Data Science-->
+                <button onclick="window.open('//forms.gle/1RYfqHuBvqJRABqh6', '_blank')" 
+                style="background-image: linear-gradient(150deg, #2b1664d7,#9c0b78d2); 
+                padding: 15px 30px; border-radius: 20px; font-weight: bold; font-style: italic;
+                font-size: large; color: wheat; border: none; cursor: pointer;">
+                Register
+             </button>
+            </div>
+            <div class="course" onclick="showDetails('course3')">
+                <img src="images\java.png" alt="Course 2">
+                <br><br><!--Java-->
+                <button onclick="window.open('//forms.gle/N11rk5HH2jzTnxwE8', '_blank')" 
+                style="background-image: linear-gradient(150deg, #2b1664d7,#9c0b78d2); 
+                padding: 15px 30px; border-radius: 20px; font-weight: bold; font-style: italic;
+                font-size: large; color: wheat; border: none; cursor: pointer;">
+                Register
+             </button>            </div>
+            <div class="course" onclick="showDetails('course4')">
+                <img src="images\python.png" alt="Course 2">
+                <br><br><!--Python-->
+                <button onclick="window.open('//forms.gle/CcV6RBTaQbfQJhXG9', '_blank')" 
+                style="background-image: linear-gradient(150deg, #2b1664d7,#9c0b78d2); 
+                padding: 15px 30px; border-radius: 20px; font-weight: bold; font-style: italic;
+                font-size: large; color: wheat; border: none; cursor: pointer;">
+                Register
+             </button>            </div>
+                <div class="course" onclick="showDetails('course5')">
+                    <img src="images\download (25).png" alt="Course 2">
+                    <br><br><!--MySQL-->
+                    <button onclick="window.open('//forms.gle/h6L6HZSM3JPimD42A', '_blank')" 
+                    style="background-image: linear-gradient(150deg, #2b1664d7,#9c0b78d2); 
+                    padding: 15px 30px; border-radius: 20px; font-weight: bold; font-style: italic;
+                    font-size: large; color: wheat; border: none; cursor: pointer;">
+                    Register
+                 </button>  
+                </div>
+                 <div class="course" onclick="showDetails('course6')">
+                    <img src="images\downloadeeee.png" alt="Course 2">
+                    <br><br><!--Digital Marketing-->
+                    <button onclick="window.open('//forms.gle/ck5mgptwfkKNUu1n9', '_blank')" 
+                    style="background-image: linear-gradient(150deg, #2b1664d7,#9c0b78d2); 
+                    padding: 15px 30px; border-radius: 20px; font-weight: bold; font-style: italic;
+                    font-size: large; color: wheat; border: none; cursor: pointer;">
+                    Register
+                 </button>                </div>
+    </section></div>
+
+    <div class="lms">
+        <div class="lms-detail" > 
+            <h2> Click Here To Login LMS  portal</h1><br>
+            <button > <a href="lms.html" style="text-decoration: none; font-size: x-large; color: whitesmoke;">LMS Login</a></button>
+        </div>
+    </div>
+
+    <div class="ins" style="background-image: url('fffnnnlll -ins.jpg');background-repeat: no-repeat;background-size: cover;padding-top: 30px;padding-bottom: 30px;" >
+<section id="instructors">
+    <div class="instructors-container">
+        <center><h1 style="font-size: 42px; margin-bottom: 35px;color:wheat;font-weight: 700; font-variant: small-caps;">🤵<i>Instructors Details </i></h1></center>
+        <!-- First Instructor (Image Left, Text Right) -->
+        <div class="a"><div class="instructor">
+            <div class="image-container">
+                <img src="instructors\akash.jpg" alt="Instructor 2">
+            </div>
+            <div class="text-container">
+                <h3>Mr.Akash</h3>
+                <p><strong>Role:</strong> Software Developer</p>
+                <p><strong>Course Duration:</strong> 1-2 Months</p>
+                <p><strong>Timing:</strong> Sat-Sun| 6 PM - 8 PM</p>
+            </div>
+        </div></div>
+     
+        <div class="b"><div class="instructor">
+            <div class="image-container">
+                <img src="instructors\kumar.jpg" alt="Instructor 1">
+            </div>
+            <div class="text-container">
+                <h3>Mr.Kumar </h3>
+                <p><strong>Role:</strong> Software Engineer | Web Development</p>
+                <p><strong>Course Duration:</strong> 1-2 Months</p>
+                <p><strong>Timing:</strong> Sat-Sun| 6 PM - 8 PM</p>
+            </div>
+        </div></div>
+    
+        <!-- Second Instructor (Image Right, Text Left) -->
+        <div class="a"><div class="instructor">
+            <div class="image-container">
+                <img src="instructors\sam.jpg" alt="Instructor 2">
+            </div>
+            <div class="text-container">
+                <h3>Mr.Sam Ruban </h3>
+                <p><strong>Role:</strong> Programming| Machine Learning</p>
+                <p><strong>Course Duration:</strong> 1-2 Months</p>
+                <p><strong>Timing:</strong> Sat-Sun| 6 PM - 8 PM</p>
+            </div>
+        </div></div>
+
+        
+        <!-- Third Instructor (Image Left, Text Right) -->
+       <div class="b"> <div class="instructor">
+            <div class="image-container">
+                <img src="instructors\Deepna.jpg" alt="Instructor 3">
+            </div>
+            <div class="text-container">
+                <h3>Ms.Deepna</h3>
+                <p><strong>Role:</strong> Programmer| Frontend Development</p>
+                <p><strong>Course Duration:</strong> 2 Months</p>
+                <p><strong>Timing:</strong> Sat-Sun| 6 PM - 8 PM</p>
+            </div>
+        </div></div>
+        <!-- Fourth Instructor (Image Right, Text Left) -->
+        <div class="a"><div class="instructor">
+            <div class="image-container">
+                <img src="instructors\kashthuri.jpg" alt="Instructor 4">
+            </div>
+            <div class="text-container">
+                <h3>Ms.kashthuri</h3>
+                <p><strong>Role:</strong>programmer | Cybersecurity Expert</p>
+                <p><strong>Course Duration:</strong> 6 Months</p>
+                <p><strong>Timing:</strong> Sat-Sun| 6 PM - 8 PM</p>
+            </div>
+        </div></div>
+          <!-- Third Instructor (Image Left, Text Right) -->
+          <div class="b"><div class="instructor">
+            <div class="image-container">
+                <img src="instructors\santhosh.jpg" alt="Instructor 3">
+            </div>
+            <div class="text-container">
+                <h3>Mr.Santhosh</h3>
+                <p><strong>Role:</strong>UI & UX Designer | Frontend Development</p>
+                <p><strong>Course Duration:</strong> 2 Months</p>
+                <p><strong>Timing:</strong> Sat-Sun| 6 PM - 8 PM</p>
+            </div>
+        </div></div>
+    
+        <!-- Fourth Instructor (Image Right, Text Left) -->
+        <div class="a"><div class="instructor">
+            <div class="image-container">
+                <img src="instructors\sathish.png" alt="Instructor 4">
+            </div>
+            <div class="text-container">
+                <h3>Mr.Sathish</h3>
+                <p><strong>Role:</strong> Database Expert</p>
+                <p><strong>Course Duration:</strong> 6 Months</p>
+                <p><strong>Timing:</strong>Sat-Sun| 6 PM - 8 PM</p>
+            </div>
+        </div></div>
+    </div>
+    
+        
+</section></div>
+    
+    
+    <div class="containerfees" style="background-image: url('eeee.avif');background-repeat: no-repeat;background-size: cover;"><section id="pricing">
+        <h2 style="font-style: italic;font-variant: small-caps; color: rgb(23, 15, 80);">🏷️Pricing & Features </h2>
+        <p><b>🚀 Special Offer This Month – Learn at Just ₹499!</b> 🎉<br><br>
+
+            <b>📌 Limited-Time Offer – Enroll Now!</b>
+            Get access to premium tech courses, including Web Development,  DCA,Java, Python, Digital Marketing, MySQL, and Data Science, for just ₹499 this month!
+            <br><br>
+            <b>💡 Additional Support for Financially Challenged Students</b>
+            We believe education should be accessible to everyone! Special additional benefits are available for students facing financial difficulties.
+            <br><br>
+        
+            <b>⏳ Hurry! Offer Ends Soon!</b><br><br>
+            
+           <b> 👉 Enroll Now & Learn with Purpose!.</b></p>
+    </section></div>
+    
+<section id="contact"> 
+    <div class="outer-container">
+        <div class="inner-container">
+            <h2><span>📞</span> Contact Details</h2>
+            <h4>Contact Person: <span>Akash</span></h4>
+            <h4>Number: <span>6382286659, 9384135146</span></h4>
+            <h4>Email: <span>macrootech.official@gmail.com</span></h4>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/106958480"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+        <footer class="footer">
+            <div class="container">
+                <!-- Founder Section -->
+                <div class="founder">
+                    <img src="akash1.png" alt="Founder Image">
+                    <h5>Mr.Akash</h5><h6>(Founder)</h6>
+                    <p>Empowering learners with knowledge.</p>
+                </div>
+    
+                <!-- Academy Info -->
+                <div class="academy-info">
+                    <img src="logo for dark.png" alt="Academy Logo" class="logo">
+                    <p style="font-variant: small-caps;">Shaping the future with the help of Technology.</p>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="social-media" >
+                    <h3>Follow Us</h3><br>
+                    <a href="https://www.instagram.com/?hl=en" style="padding: 3px; margin: 5px; color: whitesmoke; text-decoration: none; font-style: 32px;"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-facebook-f" style="padding: 3px; margin: 5px;color: whitesmoke; text-decoration: none;font-style: 32px;"></i></a>
+                    <a href="https://www.linkedin.com/company/106958480"  style="padding: 3px; margin: 5px;color: whitesmoke; text-decoration: none;font-style: 32px;"><i class="fa fa-linkedin-square"></i></a>
+    
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-bottom" style="margin-bottom: auto;">
+                <p>© 2025 Macroo Tech Academy || All Rights Reserved || Academy stared by young Warriors.</p>
+            </div>
+    </footer>
+    
+    <script>
+        function showDetails(courseId) {
+            alert(" Know more details about the Course and Register after you seen the fees structures and features." );
+        }
+        
+        function toggleMenu() {
+    const nav = document.querySelector("nav ul");
+    const menuIcon = document.querySelector(".menu");
+
+    // Toggle the active class for menu visibility
+    nav.classList.toggle("active");
+    
+    // Toggle the open class for hamburger animation
+    menuIcon.classList.toggle("open");
+}
+
+    </script>
+</body>
+</html>
