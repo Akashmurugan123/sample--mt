@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('lms.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+  
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    background: rgb(143, 138, 138);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard {
+    padding: 30px;
+  }
+  
+  .subject {
+    background: rgb(238, 220, 197);
+    padding: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 40px;
+    border-left: 8px solid #080808;
+    border-bottom: 10px solid #080808;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .subject ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .subject li {
+    margin: 10px 0;
+  }
+  
+  h1, h2 {
+    color: #1f2937;
+  }
+  
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
